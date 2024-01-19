@@ -1,0 +1,423 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    padding: 80px 0;
+    text-align: center;
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header h1 {
+    font-size: 35px;
+    margin: 0px auto;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(100, 100, 100, 0.28);
+
+}
+
+.cuerpo {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.columna-principal {
+    width: 65%;
+}
+
+.seccion-peliculas {
+    display: flex;
+    width: 100%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.pelicula {
+    text-align: center;
+    width: 30%;
+    padding-right: 30px;
+    padding: 5px;
+}
+
+.pelicula:hover {
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: #cff5ff;
+    border-radius: 2px;
+}
+
+.img-custom img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.28);
+}
+
+
+
+.pelicula-info h2 {
+    background: linear-gradient(to right, #bc74ed, #6a9aeb);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.pelicula-info p {
+    margin-top: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    color: gray;
+}
+
+.marketing {
+    width: 100%;
+    display: flex;
+
+}
+
+.banner {
+    width: 50%;
+    height: 100px;
+    margin-left: 10px;
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.28);
+}
+
+.banner h2 {
+    font-size: 18px;
+    padding: 0px;
+}
+
+.banner img {
+    margin-top: 80px;
+}
+
+.peliculas-marketing {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.pelicula-m-1,
+.pelicula-m-2,
+.pelicula-m-3 {
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 3px rgb(190, 190, 190);
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+.img-custom-m img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.28);
+    margin-left: 5px;
+}
+
+.pelicula-info-m {
+    width: 100%;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+
+.pelicula-info-m p {
+    font-size: 10px;
+    color: gray;
+    padding: 5px;
+}
+
+.columna-secundaria {
+    width: 35%;
+    margin-left: 40px;
+}
+
+.redes-sociales .enlaces {
+    margin-bottom: 50px;
+}
+
+.redes-sociales h1 {
+    background: linear-gradient(to right, #bc74ed, #6a9aeb);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.redes-sociales .enlaces a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.redes-sociales .comentarios {
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+.pelicula-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pelicula-info h7 {
+    font-weight: bold;
+    color: gray;
+
+}
+
+.redes-sociales .comentarios .pelicula-info h3 {
+    font-weight: normal;
+    color: gray;
+    font-size: 15px;
+}
+
+
+footer {
+    width: 100%;
+    padding: 10px;
+
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white
+}
+
+footer button {
+    background-color: #cff5ff;
+    color: black;
+    margin-left: 2px;
+    padding: 5px 8px;
+    font-size: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 980px) {
+
+    .cuerpo {
+        margin-top: 8px;
+    }
+
+    .columna-principal {
+        margin-left: 5px;
+    }
+
+    .img-custom img {
+        width: 130px;
+        height: 200px;
+    }
+
+    .pelicula-info h2 {
+        margin-top: 0px;
+        font-size: 19px;
+    }
+
+    .pelicula-info p {
+        font-size: 12px;
+    }
+
+    .banner {
+        width: 49%;
+        height: 130px;
+        margin-left: 5px;
+    }
+
+    .banner h2 {
+        font-size: 22px;
+        padding: 0px;
+    }
+
+    .banner img {
+        margin-top: 40px;
+    }
+
+    .pelicula-m-3 {
+        display: none;
+    }
+
+    .img-custom-m img {
+        width: 100px;
+        height: 200px;
+    }
+
+    .pelicula-info-m {
+        height: 200px;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        padding: 3px;
+    }
+
+    .pelicula-info-m p {
+        margin-top: 0px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .columna-secundaria {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        width: 100%;
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .cuerpo {
+        margin-top: 8px;
+    }
+
+    .img-custom img {
+        width: 80px;
+        height: 130px;
+
+    }
+
+
+    .pelicula-info h2 {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+
+    .pelicula-info p {
+        font-size: 8px;
+    }
+
+
+    .banner {
+        width: 48%;
+        height: 150px;
+        margin-left: 5px;
+    }
+
+    .banner h2 {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+
+
+    .peliculas-marketing {
+        margin-left: 5px;
+        display: flex;
+    }
+
+    .pelicula-m-2,
+    .pelicula-m-3 {
+        display: none;
+    }
+
+
+    .img-custom-m img {
+        width: 60px;
+        height: 120px;
+        object-fit: cover;
+        box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.28);
+        margin-left: 3px;
+
+    }
+
+    .pelicula-info-m {
+        height: 100px;
+        overflow: scroll;
+        scroll-behavior: smooth;
+        padding: 3px;
+    }
+
+    .pelicula-info-m p {
+        font-size: 8px;
+    }
+
+    .columna-secundaria {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .redes-sociales .enlaces {
+        margin-bottom: 5px;
+    }
+
+    .redes-sociales .enlaces a img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .redes-sociales h1 {
+        font-size: 10px;
+    }
+
+    .redes-sociales .comentarios {
+        margin-top: 30px;
+        margin-right: 5px;
+    }
+
+    .comentarios .pelicula-info {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 100px;
+
+        margin-left: 5px;
+    }
+
+    .pelicula-info h7 {
+        font-size: 8px;
+    }
+
+    .redes-sociales .comentarios .pelicula-info h3 {
+        height: 50px;
+        font-size: 8px;
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+
+    footer h2 {
+        font-size: 18px;
+    }
+}
